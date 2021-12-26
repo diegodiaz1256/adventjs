@@ -95,7 +95,7 @@ groupBy([{age: 23}, {age: 24}], 'age') // { 23: [{age: 23}], 24: [{age: 24}] }
 console.log(groupBy([6.1, 4.2, 6.3], Math.floor),"\n\n")
 
 //day 10
-const getCoins = require("./dias/day10")
+const getCoins = require("./dias/day_10")
 console.log("Dia 10: Maquina de cambios\n")
 console.log(getCoins(51),"\n\n")
 
