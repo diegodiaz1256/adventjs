@@ -226,13 +226,23 @@ const from = 'AA'
 const to   = 'MID'
 console.log(canReconfigure(from, to),"\n\n")
 
-/*//day 24
-const pangram = require("./dias/day_20")
-console.log("Dia 20: Tiene todas las letras\n")
-console.log(pangram('Jovencillo emponzoñado y con walkman: ¡qué figurota exhibes!'),"\n\n")*/
+//day 24
+const checkIsSameTree = require("./dias/day_24")
+console.log("Dia 24: Es el mismo Arbol?\n")
+const tree2 = {
+    value: 1,
+    left: { value: 2, left: null, right: null },
+    right: { value: 3, left: null, right: null }
+}
+console.log(checkIsSameTree(tree2, tree2),"\n\n")
 
-/*
 //day 25
-const pangram = require("./dias/day_20")
-console.log("Dia 20: Tiene todas las letras\n")
-console.log(pangram('Jovencillo emponzoñado y con walkman: ¡qué figurota exhibes!'),"\n\n")*/
+const canMouseEat = require("./dias/day_25")
+console.log("Dia 25: Puede Comer el Raton?\n")
+const room = [
+    [' ', ' ', ' '],
+    [' ', ' ', 'm'],
+    [' ', ' ', '*'],
+    [' ', ' ', '*']
+]
+console.log(canMouseEat("up",room),"\n\n")
