@@ -149,4 +149,9 @@ console.log(fixFiles(files),"\n\n")
 //day 19
 const learn = require("./dias/day19")
 console.log("Dia 19: Horas para aprender\n")
-console.log(learn(10,[2, 3, 8, 1, 4]),"\n\n")
+console.log(learn(8, [8, 2, 1]),"\n\n")
+
+//day 20
+const pangram = require("./dias/day20")
+console.log("Dia 20: Tiene todas las letras\n")
+console.log(pangram('Jovencillo emponzoñado y con walkman: ¡qué figurota exhibes!'),"\n\n")
