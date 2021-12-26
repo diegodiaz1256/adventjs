@@ -22,8 +22,8 @@ console.log(listGifts(carta),"\n\n")
 //day 3
 const isValid = require("./dias/day3")
 console.log("Dia 3: Es valida mi carta\n\n")
-const micarta = "() bici"
-console.log(micarta,"\n", isValid(micarta))
+const micarta = "(()) bici"
+console.log( isValid(micarta),"\n\n")
 
 
 //day 4
@@ -118,7 +118,7 @@ console.log(wrapGifts(["🏀"]),"\n\n")
 //day 14
 const missingReindeer = require("./dias/day_14")
 console.log("Dia 14: Reno Perdido\n")
-console.log(missingReindeer([1, 2, 3, 2, 1, 2, 3]),"\n\n")
+console.log(missingReindeer([3, 0, 1]),"\n\n")
 
 //day 15
 const checkSledJump = require("./dias/day_15")
@@ -130,7 +130,7 @@ const decodeNumber = require("./dias/day_16")
 console.log("Dia 16: Decodificar Numero\n")
 console.log(decodeNumber(";.W"),"\n\n")
 
-//day 16
+//day 17
 const countPackages = require("./dias/day_17")
 console.log("Dia 17: Count Packages\n")
 const carriers = [
@@ -149,7 +149,7 @@ console.log(fixFiles(files),"\n\n")
 //day 19
 const learn = require("./dias/day_19")
 console.log("Dia 19: Horas para aprender\n")
-console.log(learn(8, [8, 2, 1]),"\n\n")
+console.log(learn(8, [8, 2, 1, 6]),"\n\n")
 
 //day 20
 const pangram = require("./dias/day_20")
@@ -159,9 +159,10 @@ console.log(pangram('Jovencillo emponzoñado y con walkman: ¡qué figurota exhi
 //day 21
 const canCarry = require("./dias/day_21")
 console.log("Dia 21: Rutas de regalos\n")
-console.log(canCarry(3, [[1, 1, 5], [2, 2, 10]]),"\n\n")
+console.log(canCarry(4, [[1, 1, 5], [3, 2, 10]]),"\n\n")
 
 //day 22
+
 const countDecorations = require("./dias/day_22")
 console.log("Dia 22: Recorrer arbol y contar\n")
 const tree = {
@@ -231,10 +232,10 @@ const checkIsSameTree = require("./dias/day_24")
 console.log("Dia 24: Es el mismo Arbol?\n")
 const tree2 = {
     value: 1,
-    left: { value: 2, left: null, right: null },
+    left: { value: 2, left: { value: 2, left: null, right: null }, right: null },
     right: { value: 3, left: null, right: null }
 }
-console.log(checkIsSameTree(tree2, tree2),"\n\n")
+console.log(checkIsSameTree(tree, tree2),"\n\n")
 
 //day 25
 const canMouseEat = require("./dias/day_25")
