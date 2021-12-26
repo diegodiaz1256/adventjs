@@ -155,3 +155,84 @@ console.log(learn(8, [8, 2, 1]),"\n\n")
 const pangram = require("./dias/day_20")
 console.log("Dia 20: Tiene todas las letras\n")
 console.log(pangram('Jovencillo emponzoñado y con walkman: ¡qué figurota exhibes!'),"\n\n")
+
+//day 21
+const canCarry = require("./dias/day_21")
+console.log("Dia 21: Rutas de regalos\n")
+console.log(canCarry(3, [[1, 1, 5], [2, 2, 10]]),"\n\n")
+
+//day 22
+const countDecorations = require("./dias/day_22")
+console.log("Dia 22: Recorrer arbol y contar\n")
+const tree = {
+    value: 1, // el nodo raíz siempre es uno, porque es la estrella ⭐
+    left: {
+        value: 2, // el nodo izquierdo necesita dos decoraciones
+        left: null, // no tiene más ramas
+        right: null // no tiene más ramas
+    },
+    right: {
+        value: 3, // el nodo de la derecha necesita tres decoraciones
+        left: null, // no tiene más ramas
+        right: null // no tiene más ramas
+    }
+}
+const bigTree = {
+    value: 1,
+    left: {
+        value: 5,
+        left: {
+            value: 7,
+            left: {
+                value: 3,
+                left: null,
+                right: null
+            },
+            right: null
+        },
+        right: null
+    },
+    right: {
+        value: 6,
+        left: {
+            value: 5,
+            left: null,
+            right: null
+        },
+        right: {
+            value: 1,
+            left: null,
+            right: null
+        }
+    }
+}
+
+/*
+        1
+      /   \
+     5     6
+    /     / \
+   7     5   1
+  /
+ 3
+*/
+
+console.log(countDecorations(bigTree),"\n\n")
+
+//day 23
+const canReconfigure = require("./dias/day_23")
+console.log("Dia 23: Se puede reconfigurar?\n")
+const from = 'AA'
+const to   = 'MID'
+console.log(canReconfigure(from, to),"\n\n")
+
+/*//day 24
+const pangram = require("./dias/day_20")
+console.log("Dia 20: Tiene todas las letras\n")
+console.log(pangram('Jovencillo emponzoñado y con walkman: ¡qué figurota exhibes!'),"\n\n")*/
+
+/*
+//day 25
+const pangram = require("./dias/day_20")
+console.log("Dia 20: Tiene todas las letras\n")
+console.log(pangram('Jovencillo emponzoñado y con walkman: ¡qué figurota exhibes!'),"\n\n")*/
