@@ -95,43 +95,43 @@ groupBy([{age: 23}, {age: 24}], 'age') // { 23: [{age: 23}], 24: [{age: 24}] }
 console.log(groupBy([6.1, 4.2, 6.3], Math.floor),"\n\n")
 
 //day 10
-const getCoins = require("./dias/day10")
+const getCoins = require("./dias/day_10")
 console.log("Dia 10: Maquina de cambios\n")
 console.log(getCoins(51),"\n\n")
 
 //day 11
-const shouldBuyFidelity = require("./dias/day11")
+const shouldBuyFidelity = require("./dias/day_11")
 console.log("Dia 11: Tarjeta de Fidelidad\n")
 console.log(shouldBuyFidelity(100),"\n\n")
 
 //day 12
-const getMinJump=require("./dias/day12")
+const getMinJump=require("./dias/day_12")
 console.log("Dia 12: Menor salto\n")
 const obstacles = [3, 7, 5]
 console.log(getMinJump(obstacles),"\n\n")
 
 //day 13
-const wrapGifts = require("./dias/day13")
+const wrapGifts = require("./dias/day_13")
 console.log("Dia 13: Envolver regalos\n")
 console.log(wrapGifts(["🏀"]),"\n\n")
 
 //day 14
-const missingReindeer = require("./dias/day14")
+const missingReindeer = require("./dias/day_14")
 console.log("Dia 14: Reno Perdido\n")
 console.log(missingReindeer([1, 2, 3, 2, 1, 2, 3]),"\n\n")
 
 //day 15
-const checkSledJump = require("./dias/day15")
+const checkSledJump = require("./dias/day_15")
 console.log("Dia 15: Salto de Trineo\n")
 console.log(checkSledJump([2, 4, 4, 6, 2]),"\n\n")
 
 //day 16
-const decodeNumber = require("./dias/day16")
+const decodeNumber = require("./dias/day_16")
 console.log("Dia 16: Decodificar Numero\n")
 console.log(decodeNumber(";.W"),"\n\n")
 
 //day 16
-const countPackages = require("./dias/day17")
+const countPackages = require("./dias/day_17")
 console.log("Dia 17: Count Packages\n")
 const carriers = [
     ['dapelu', 5, ['midu', 'jelowing']],
@@ -141,17 +141,17 @@ const carriers = [
 console.log(countPackages(carriers, "dapelu"),"\n\n")
 
 //day 18
-const fixFiles = require("./dias/day18")
+const fixFiles = require("./dias/day_18")
 console.log("Dia 18: Arreglar Archivos\n")
 const files = ['photo', 'postcard', 'photo', 'photo', 'video']
 console.log(fixFiles(files),"\n\n")
 
 //day 19
-const learn = require("./dias/day19")
+const learn = require("./dias/day_19")
 console.log("Dia 19: Horas para aprender\n")
 console.log(learn(8, [8, 2, 1]),"\n\n")
 
 //day 20
-const pangram = require("./dias/day20")
+const pangram = require("./dias/day_20")
 console.log("Dia 20: Tiene todas las letras\n")
 console.log(pangram('Jovencillo emponzoñado y con walkman: ¡qué figurota exhibes!'),"\n\n")
